@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ContextA.Core.ContextB.Service {
+namespace ContextA.Application.ContextBService {
     using System.Runtime.Serialization;
     using System;
     
@@ -75,7 +75,7 @@ namespace ContextA.Core.ContextB.Service {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ContextB.Service.IProductService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ContextBService.IProductService")]
     public interface IProductService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/GetData", ReplyAction="http://tempuri.org/IProductService/GetDataResponse")]
@@ -85,19 +85,19 @@ namespace ContextA.Core.ContextB.Service {
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IProductService/GetDataUsingDataContractResponse")]
-        ContextA.Core.ContextB.Service.CompositeType GetDataUsingDataContract(ContextA.Core.ContextB.Service.CompositeType composite);
+        ContextA.Application.ContextBService.CompositeType GetDataUsingDataContract(ContextA.Application.ContextBService.CompositeType composite);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IProductService/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<ContextA.Core.ContextB.Service.CompositeType> GetDataUsingDataContractAsync(ContextA.Core.ContextB.Service.CompositeType composite);
+        System.Threading.Tasks.Task<ContextA.Application.ContextBService.CompositeType> GetDataUsingDataContractAsync(ContextA.Application.ContextBService.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IProductServiceChannel : ContextA.Core.ContextB.Service.IProductService, System.ServiceModel.IClientChannel {
+    public interface IProductServiceChannel : ContextA.Application.ContextBService.IProductService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ProductServiceClient : System.ServiceModel.ClientBase<ContextA.Core.ContextB.Service.IProductService>, ContextA.Core.ContextB.Service.IProductService {
+    public partial class ProductServiceClient : System.ServiceModel.ClientBase<ContextA.Application.ContextBService.IProductService>, ContextA.Application.ContextBService.IProductService {
         
         public ProductServiceClient() {
         }
@@ -126,11 +126,11 @@ namespace ContextA.Core.ContextB.Service {
             return base.Channel.GetDataAsync(value);
         }
         
-        public ContextA.Core.ContextB.Service.CompositeType GetDataUsingDataContract(ContextA.Core.ContextB.Service.CompositeType composite) {
+        public ContextA.Application.ContextBService.CompositeType GetDataUsingDataContract(ContextA.Application.ContextBService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContract(composite);
         }
         
-        public System.Threading.Tasks.Task<ContextA.Core.ContextB.Service.CompositeType> GetDataUsingDataContractAsync(ContextA.Core.ContextB.Service.CompositeType composite) {
+        public System.Threading.Tasks.Task<ContextA.Application.ContextBService.CompositeType> GetDataUsingDataContractAsync(ContextA.Application.ContextBService.CompositeType composite) {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
     }

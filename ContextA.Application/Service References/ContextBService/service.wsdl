@@ -52,7 +52,7 @@
   </wsdl:binding>
   <wsdl:service name="ProductService">
     <wsdl:port name="BasicHttpBinding_IProductService" binding="tns:BasicHttpBinding_IProductService">
-      <soap:address location="http://localhost:8733/Design_Time_Addresses/ContexB.Application/Service1/" />
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ContexB.Application/ContextBService/" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

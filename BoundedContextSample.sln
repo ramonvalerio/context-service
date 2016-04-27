@@ -17,6 +17,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContexB.Application", "ContexB.Application\ContexB.Application.csproj", "{86F64B6E-4180-41B9-BF78-1145953CF2A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextA.Application", "ContextA.Application\ContextA.Application.csproj", "{4E17D1A4-239E-40AB-A566-61CE6DD97B0F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86F64B6E-4180-41B9-BF78-1145953CF2A9} = {86F64B6E-4180-41B9-BF78-1145953CF2A9}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{46039622-C21B-48FE-B34D-F76A4136A02D}"
 EndProject
